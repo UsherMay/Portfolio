@@ -4,6 +4,8 @@ import "./index.css"
 import LoadingScreen from './components/LoadingScreen'
 import NavBar from './components/NavBar'
 import MobileMenu from './components/MobileMenu'
+import Home from './components/sections/Home'
+// import About from './components/sections/About'
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,8 +16,10 @@ function App() {
       {!isLoaded && <LoadingScreen onComplete={()=> setIsLoaded(true)} /> }
       <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-black text-gray-100`}>
 
-      <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <Home/>
+        {/* <About/> */}
       </div>
     </>
   )
