@@ -1,3 +1,5 @@
+import { v4 as uuidv } from 'uuid'
+
 function About(){
 
     const frontendSkills = [
@@ -17,6 +19,40 @@ function About(){
         "PlayCanvas"
     ];
 
+    const educationSection = [
+        {
+            title: "Diplome d'Ingénieur Informatique",
+            school: "ENSIIE",
+            location: "Evry",
+            duration: "2020-2024",
+            description: "Cours principaux: Developpement JV, RA, RV, Web, Gestion de données"
+        },
+        {
+            title: "Classes Préparatoires aux Grandes Écoles",
+            school: "Lycée Jeanne d'Albret",
+            location: "Saint-Germain-en-Laye",
+            duration: "2018-2020",
+            description: "PCSI (Physique, Chimie et Sciences de l'Ingénieur) puis PC"
+        },
+    ];
+
+    const workSection = [
+        {
+            title: "Développeur Jeux Mobiles et HTML5",
+            company: "Kayfo Games Studio",
+            location: "Sénégal",
+            duration: "Aoû 2023 - Jan 2024",
+            description: "Développement de jeux vidéo mobiles (Unity) et HTML5 (PlayCanvas et Cocos Creator)"
+        },
+        {
+            title: "Développeur Backend .Net",
+            company: "SenGames / SoloEsport",
+            location: "Sénégal",
+            duration: "Aoû 2023 - Jan 2024",
+            description: "Développement d’une plateforme web dédiée à l’écosystème des compétitions d’esport (ASP.NET Core 6.0, MVC, Entity Framework)"
+        },
+    ];
+
 
     return(
         <section
@@ -25,7 +61,7 @@ function About(){
         >
             <div className="max-w-3xl mx-auto px-4">
                 <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
-                    About Me
+                    À Propos de Moi
                 </h2>
 
                 <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
@@ -97,18 +133,29 @@ function About(){
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                         <h3 className="text-xl font-bold mb-4"> 🏫 Education</h3>
                         <ul className="list-disc list-inside text-gray-300 space-y-z">
-                            <li>
+                            {/* <li>
                                 <strong>Diplome d'Ingénieur Informatique</strong> - ENSIIE (2020-2024)
                             </li>
                             <li>
                                 Cours principaux: Developpement JV, RA, RV, Web, Gestion de données
-                            </li>
+                            </li> */}
+                            {educationSection.map((education,index) =>
+                            <>
+                                <li key={index}>
+                                    <strong>{education.title}</strong> - {education.school} ({education.duration})
+                                </li>
+                                <li key={uuidv()}>
+                                    {education.description}
+                                </li>
+                                
+                                <br/>
+                            </>)}
                         </ul>
                     </div>
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                         <h3 className="text-xl font-bold mb-4"> 💼 Experience</h3>
                         <div className="scape-y-4 text-gray-300">
-                            <div>
+                            {/* <div>
                                 <h4 className="font-semibold">
                                     Développeur Jeux Mobiles et HTML5 at Kayfo Game Studio (Aoû 2023 - Jan 2024)
                                     
@@ -126,7 +173,21 @@ function About(){
                                 <p>
                                     blablabla.
                                 </p>
-                            </div>
+                            </div> */}
+                            {workSection.map((work,index) =>
+                            <>
+                                <div key={uuidv()}>
+                                    <h4 key={uuidv()} className="font-semibold">
+                                        <strong>{work.title}</strong> chez {work.company} ({work.duration}), {work.location}
+                                    </h4>
+                                    
+                                    <p key={uuidv()}>
+                                        {work.description}
+                                    </p>
+                                </div>
+                                                           
+                                <br/>
+                            </>)}
                         </div>
                     </div>
                 </div>
