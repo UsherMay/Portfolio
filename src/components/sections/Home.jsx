@@ -4,10 +4,27 @@ function Home(){
             id="home" 
             className="min-h-screen flex items-center justify-center relative"
         >
+            {/* https://stackoverflow.com/questions/74542280/bottom-of-gradient-text-gets-cut-off-tailwindcss 
+            <div className="px-10 sm:px-10 md:px-12 ">
+                <div className='relative max-w-6xl mx-auto pt-20 sm:pt-24 lg:pt-32'>
+                    <h1 className="h-[8rem] sm:h-[4rem] font-semibold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                        <span className="text-center">Testing Image grapes plane page</span></h1>
+                </div>
+            </div> */}
+            
             <div className="text-center z-10 px-4">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
-                    Bonjour, je suis Yvon Cocks
+                    Hi, I'm Yvon Cocks
                 </h1>
+            {/*
+            <div className="text-center z-10 px-4 sm:px-10 md:px-12">
+                 <div className="relative max-w-6xl mx-auto pt-20 sm:pt-24 lg:pt-32">
+
+                    <h1 className="h-[8rem] sm:h-[4rem] text-4xl sm:text-5xl lg:text-6xl tracking-tight md:text-7xl font-bold mb-4 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
+                        Hi, I'm Yvon Cocks
+                    </h1>
+                </div> */}
+                
 
                 <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
                 Diplômé en ingénierie informatique de l’ENSIIE, 
@@ -33,7 +50,7 @@ function Home(){
                 >
                     Télecharger mon CV
                 </a>
-            </div>
+                </div>
             </div>
 
             
