@@ -17,7 +17,7 @@ function Home(){
                 
                 <div className="text-center z-10 px-4">
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
-                        Hi, I'm Yvon Cocks
+                        Hi, Je suis Yvon Cocks
                     </h1>
                 {/*
                 <div className="text-center z-10 px-4 sm:px-10 md:px-12">
@@ -28,10 +28,10 @@ function Home(){
                         </h1>
                     </div> */}
                     
-
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                        Diplômé en ingénierie informatique de l’ENSIIE, 
-                        j'ai acquis des compétences en tant que Développeur Unity, C#, C++, C, RA, RV, .Net, ReactJS.
+                        Je recherche un emploi en tant que
+                        développeur Unity / C# / C++ / C / Réalité Augmentée (RA) / Réalité Virtuelle (RV)
+                        / .Net / React.
                     </p>
 
                     <div className="flex justify-center space-x-4">
@@ -43,7 +43,7 @@ function Home(){
                             hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.4)]
                             hover:bg-orange-300"
                     >
-                        Voir mes Projets
+                        Mes Projets
                     </a>
                     <a 
                         // href="#projects" 
@@ -53,7 +53,7 @@ function Home(){
                             hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.2)]
                             hover:bg-orange-500/10"
                     >
-                        Voir mes CV
+                        Mes CVs
                     </a>
                     </div>
                 </div>

@@ -35,6 +35,22 @@ html, body {
     animation: blink 0.8s step-end infinite;
   }
 
+  @keyframes floating {
+    0%{
+      transform: translateX(0, 0px);
+    }
+    50%{
+      transform: translateX(0, 10px);
+    }
+    100%{
+      transform: translateX(0, -0px);
+    }
+  }
+
+  .animate-floating{
+    animation: floating 3s ease-in-out infinite;
+  }
+
 }
 
 .reveal{
