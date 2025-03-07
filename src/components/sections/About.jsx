@@ -1,27 +1,31 @@
 import { v4 as uuidv } from 'uuid'
 import RevealOnScroll from '../RevealOnScroll';
+import EducationSubSection from '../EducationSubSection';
+import WorkSubSection from '../WorkSubSection';
 
 function About(){
 
     const frontendSkills = [
         "React",
         "TypeScript",
-        "TailWindCSS"
+        "TailWindCSS",
     ];
 
     const backendSkills = [
         "NodeJS",
-        ".Net"
+        ".Net",
     ];
 
     const gameDevSkills = [
         "Unity",
         "Cocos",
-        "PlayCanvas"
+        "PlayCanvas",
     ];
 
     const educationSection = [
         {
+            idShort: "Dip_Ing_Info_ENSIIE", 
+            idFull: "Dip_Ing_Info_ENSIIE_Evr_20-24", // just using the first letters
             title: "Diplome d'Ingénieur Informatique",
             school: "ENSIIE",
             location: "Evry",
@@ -29,6 +33,8 @@ function About(){
             description: "Cours principaux: Developpement JV, RA, RV, Web, Gestion de données"
         },
         {
+            idShort: "CPGE_Lyc_Jea_Alb",
+            idFull: "CPGE_Lyc_Jea_Alb_Evry_18-20",
             title: "Classes Préparatoires aux Grandes Écoles",
             school: "Lycée Jeanne d'Albret",
             location: "Saint-Germain-en-Laye",
@@ -39,6 +45,9 @@ function About(){
 
     const workSection = [
         {
+            idShortStart: "Dev_Jeu_Mob_HTML5_Kay_Gam_Stu", // title + company
+            idShortEnd: "Kay_Gam_Stu_Sen_Aou23-Jan24", // company -> duration
+            idFull: "Dev_Jeu_Mob_HTML5_Kay_Gam_Stu_Sen_Aou23-Jan24", //title -> duration
             title: "Développeur Jeux Mobiles et HTML5",
             company: "Kayfo Games Studio",
             location: "Sénégal",
@@ -46,6 +55,9 @@ function About(){
             description: "Développement de jeux vidéo mobiles (Unity) et HTML5 (PlayCanvas et Cocos Creator)"
         },
         {
+            idShortStart: "Dev_Back_Net_Sen_Solo",
+            idShortEnd: "Sen_Solo_Sen_Aou23-Jan24",
+            idFull: "Dev_Back_Net_Sen_Solo_Sen_Aou23-Jan24",
             title: "Développeur Backend .Net",
             company: "SenGames / SoloEsport",
             location: "Sénégal",
@@ -107,7 +119,7 @@ function About(){
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-center text-xl font-bold mb-4">Game Dev</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {/* if you see any diffenrec tell me XD
+                                    {/* if you see any diffenrec tell me XD -> the problem was the curly brackets after =>
                                         {gameDevSkills.map((tech, key)=>{
                                         <span key={key}
                                             className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sa 
@@ -143,15 +155,18 @@ function About(){
                                 </li> */}
                                 {educationSection.map((education,index) =>
                                 <>
-                                    <li key={index}>
+                                    <li key={education.school}>
                                         <strong>{education.title}</strong> - {education.school} ({education.duration})
                                     </li>
-                                    <li key={uuidv()}>
+                                    <li key={education.idFull}>
                                         {education.description}
                                     </li>
                                     
                                     <br/>
                                 </>)}
+                                {/* {educationSection.map((education,index) =>
+                                    <EducationSubSection {...education} index={index} key={education.idFull}/>
+                                )} */}
                             </ul>
                         </div>
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
@@ -178,18 +193,21 @@ function About(){
                                 </div> */}
                                 {workSection.map((work,index) =>
                                 <>
-                                    <div key={uuidv()}>
-                                        <h4 key={uuidv()} className="font-semibold">
+                                    <div key={index}>
+                                        <h4 key={work.idFull} className="font-semibold">
                                             <strong>{work.title}</strong> chez {work.company} ({work.duration}), {work.location}
                                         </h4>
                                         
-                                        <p key={uuidv()}>
+                                        <p key={work.idShortStart}>
                                             {work.description}
                                         </p>
                                     </div>
                                                             
                                     <br/>
                                 </>)}
+                                {/* {workSection.map(({title, school, location, duration, description},index) =>
+                                    <WorkSubSection idx={index} title={title} school={school} location={location} duration={duration} description={description}/>
+                                )} */}
                             </div>
                         </div>
                     </div>
