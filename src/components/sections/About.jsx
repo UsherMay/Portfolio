@@ -164,7 +164,8 @@ function About(){
                                     
                                     <br/>
                                 </>)}
-                                {/* {educationSection.map((education,index) =>
+                                {/* https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key 
+                                {educationSection.map((education,index) =>
                                     <EducationSubSection {...education} index={index} key={education.idFull}/>
                                 )} */}
                             </ul>
