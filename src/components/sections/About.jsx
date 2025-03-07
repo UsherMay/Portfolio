@@ -5,22 +5,47 @@ import WorkSubSection from '../WorkSubSection';
 
 function About(){
 
-    const frontendSkills = [
-        "React",
-        "TypeScript",
-        "TailWindCSS",
-    ];
+    const frontendSkills = {
+        title: "Frontend",
+        listOfSkills:
+        [
+            "Html",
+            "CSS",
+            "JavaScript",
+            "React",
+            "TypeScript",
+            "TailWindCSS",
+        ]
+    };
 
-    const backendSkills = [
-        "NodeJS",
-        ".Net",
-    ];
+    const backendSkills = {
+        title: "Backend",
+        listOfSkills:
+        [
+            "PHP",
+            "NodeJS",
+            ".Net",
+        ]
+    };
 
-    const gameDevSkills = [
-        "Unity",
-        "Cocos",
-        "PlayCanvas",
-    ];
+    const gameDevSkills = {
+        title: "Game Dev",
+        listOfSkills:
+        [
+            "Unity",
+            "Cocos",
+            "PlayCanvas",
+            "Réalité Augmentée",
+            "Réalité Virtuelle"
+    ]};
+
+    const databaseSkills = {
+        title: "Database",
+        listOfSkills:
+        [
+            "SQL",
+            "PostgreSQL",
+    ]};
 
     const educationSection = [
         {
@@ -84,13 +109,13 @@ function About(){
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-center text-xl font-bold mb-4">Frontend</h3>
+                                <h3 className="text-center text-xl font-bold mb-4">{frontendSkills.title}</h3>
                                 <div className="flex flex-wrap gap-2">
                             
-                                    {frontendSkills.map((tech,index) => 
+                                    {frontendSkills.listOfSkills.map((tech,index) => 
                                     <span 
                                         key={index} 
                                         className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sm 
@@ -103,9 +128,9 @@ function About(){
                             </div>
 
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-center text-xl font-bold mb-4">Backend</h3>
+                                <h3 className="text-center text-xl font-bold mb-4">{backendSkills.title}</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {backendSkills.map((tech,index) => 
+                                    {backendSkills.listOfSkills.map((tech,index) => 
                                     <span 
                                         key={index} 
                                         className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sm 
@@ -117,7 +142,7 @@ function About(){
                             </div>
 
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-center text-xl font-bold mb-4">Game Dev</h3>
+                                <h3 className="text-center text-xl font-bold mb-4">{databaseSkills.title}</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {/* if you see any diffenrec tell me XD -> the problem was the curly brackets after =>
                                         {gameDevSkills.map((tech, key)=>{
@@ -126,7 +151,28 @@ function About(){
                                                 hover:bg-orange-500/20 hover:shadow-[0_2px_8px_rgba(239, 185, 48, 0.2)]
                                                 transition">{tech}</span>
                                     })} */}
-                                    {gameDevSkills.map((tech,index) => 
+                                    {databaseSkills.listOfSkills.map((tech,index) => 
+                                    <span 
+                                        key={index} 
+                                        className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sm 
+                                        hover:bg-orange-500/20 hover:shadow-[0_2px_8px_rgba(239,185,48,0.2)] transition">
+                                        {tech}
+                                    </span>)}
+                                </div>
+
+                            </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-center text-xl font-bold mb-4">{gameDevSkills.title}</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {/* if you see any diffenrec tell me XD -> the problem was the curly brackets after =>
+                                        {gameDevSkills.map((tech, key)=>{
+                                        <span key={key}
+                                            className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sa 
+                                                hover:bg-orange-500/20 hover:shadow-[0_2px_8px_rgba(239, 185, 48, 0.2)]
+                                                transition">{tech}</span>
+                                    })} */}
+                                    {gameDevSkills.listOfSkills.map((tech,index) => 
                                     <span 
                                         key={index} 
                                         className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sm 
