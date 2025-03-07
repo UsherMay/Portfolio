@@ -2,7 +2,20 @@ import { useEffect } from "react";
 
 function MobileMenu({isMenuOpen, setIsMenuOpen}){
 
-    
+    const navBarInfo = [
+        {
+            title:"Home",
+            href:"#home",
+        },
+        {
+            title:"About",
+            href:"#about",
+        },
+        {
+            title:"Projects",
+            href:"#projects",
+        }
+    ];
 
     return(
         <div className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center
@@ -21,7 +34,17 @@ function MobileMenu({isMenuOpen, setIsMenuOpen}){
                 &times;
             </button>
 
-            <a 
+            {navBarInfo.map(({title,href},index)=>
+                <a  key={index}
+                    href={href}
+                    onClick={()=>setIsMenuOpen(false)} 
+                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                        ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+                    >
+                        {title}
+                </a>
+            )}
+            {/* <a 
                 href="#home" 
                 onClick={()=>setIsMenuOpen(false)} 
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
@@ -44,7 +67,7 @@ function MobileMenu({isMenuOpen, setIsMenuOpen}){
                     ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
                 >
                     Projects
-            </a>
+            </a> */}
 
         </div>
     );

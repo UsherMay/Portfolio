@@ -2,6 +2,21 @@ import { useEffect } from "react";
 
 function NavBar({isMenuOpen, setIsMenuOpen}){
 
+    const navBarInfo = [
+        {
+            title:"Home",
+            href:"#home",
+        },
+        {
+            title:"About",
+            href:"#about",
+        },
+        {
+            title:"Projects",
+            href:"#projects",
+        }
+    ];
+    
     useEffect(()=>{
         document.body.style.overflow = isMenuOpen ? "hidden" : "";
     }, [isMenuOpen]);
@@ -20,9 +35,14 @@ function NavBar({isMenuOpen, setIsMenuOpen}){
                     </div>
 
                     <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-gray-300 hove:text-white transition-colors">Home</a>
+                        {navBarInfo.map(({title, href},index)=>
+                            <a key={index} href={href} className="text-gray-300 hove:text-white transition-colors">{title}</a>
+
+                        )}
+                        
+                        {/* <a href="#home" className="text-gray-300 hove:text-white transition-colors">Home</a>
                         <a href="#about" className="text-gray-300 hove:text-white transition-colors">About</a>
-                        <a href="#projects" className="text-gray-300 hove:text-white transition-colors">Projects</a>
+                        <a href="#projects" className="text-gray-300 hove:text-white transition-colors">Projects</a> */}
 
                     </div>
                 </div>
