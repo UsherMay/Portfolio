@@ -36,7 +36,7 @@ function NavBar({isMenuOpen, setIsMenuOpen}){
 
                     <div className="hidden md:flex items-center space-x-8">
                         {navBarInfo.map(({title, href},index)=>
-                            <a key={index} href={href} className="text-gray-300 hove:text-white transition-colors">{title}</a>
+                            <a key={index} href={href} className="text-gray-300 hover:text-white transition-colors">{title}</a>
 
                         )}
                         

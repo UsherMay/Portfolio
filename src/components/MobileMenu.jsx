@@ -38,10 +38,10 @@ function MobileMenu({isMenuOpen, setIsMenuOpen}){
                 <a  key={index}
                     href={href}
                     onClick={()=>setIsMenuOpen(false)} 
-                    className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                    className={`text-2xl font-semibold my-4 transform transition-transform duration-300
                         ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
                     >
-                        {title}
+                        <span className="text-gray-300 hover:text-white transition-colors">{title}</span>
                 </a>
             )}
             {/* <a 
