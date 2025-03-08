@@ -50,8 +50,6 @@ function About(){
 
     const educationSection = [
         {
-            idShort: "Dip_Ing_Info_ENSIIE", 
-            idFull: "Dip_Ing_Info_ENSIIE_Evr_20-24", // just using the first letters
             title: "Diplome d'Ingénieur Informatique",
             school: "ENSIIE",
             location: "Evry",
@@ -59,8 +57,6 @@ function About(){
             description: "Ingénieur Informatique généraliste spécialisé en Jeux vidéo et Interaction Numérique"
         },
         {
-            idShort: "CPGE_Lyc_Jea_Alb",
-            idFull: "CPGE_Lyc_Jea_Alb_Evry_18-20",
             title: "Classes Préparatoires aux Grandes Écoles",
             school: "Lycée Jeanne d'Albret",
             location: "Saint-Germain-en-Laye",
@@ -71,9 +67,6 @@ function About(){
 
     const workSection = [
         {
-            idShortStart: "Dev_Jeu_Mob_HTML5_Kay_Gam_Stu", // title + company
-            idShortEnd: "Kay_Gam_Stu_Sen_Aou23-Jan24", // company -> duration
-            idFull: "Dev_Jeu_Mob_HTML5_Kay_Gam_Stu_Sen_Aou23-Jan24", //title -> duration
             title: "Développeur Jeux Mobiles et HTML5",
             company: "Kayfo Games Studio",
             location: "Sénégal",
@@ -86,9 +79,6 @@ function About(){
             ]
         },
         {
-            idShortStart: "Dev_Back_Net_Sen_Solo",
-            idShortEnd: "Sen_Solo_Sen_Aou23-Jan24",
-            idFull: "Dev_Back_Net_Sen_Solo_Sen_Aou23-Jan24",
             title: "Développeur Backend .Net",
             company: "SenGames / SoloEsport",
             location: "Sénégal",
@@ -101,9 +91,6 @@ function About(){
             ]
         },
         {
-            idShortStart: "Dev_RA_R&D_Cen_Inn_Evr",
-            idShortEnd: "Cen_Inn_Evr_Juin22-Sept22",
-            idFull: "Dev_RA_R&D_Cen_Inn_Evrr_Juin22-Sept22",
             title: "Développeur Réalité Augmentée (R&D)",
             company: "Centre d'Innovation d'Évry",
             location: "Évry",
@@ -210,7 +197,7 @@ function About(){
                         
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols2 gap-4 mt-8">
+                    <div className="grid grid-cols-1 md:grid-cols2 gap-6 mt-8">
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl text-center font-bold mb-4"> 🏫 Éducation</h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-z">

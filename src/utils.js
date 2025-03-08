@@ -11,6 +11,10 @@ function getNavBarInfoArray(){
         {
             title:"Projets",
             href:"#projects",
+        },
+        {
+            title:"Contact",
+            href:"#contact",
         }
     ];
 

@@ -15,9 +15,7 @@ function Projects(){
             techList: [
                 "React",
                 "TailwindCSS",
-                "Javascript",
                 "Node.JS",
-                "Vite"
             ],
             href :""
         },
@@ -52,8 +50,8 @@ function Projects(){
             href :"https://www.kayfo.games/game/fruit-spin"
         },
         {
-            title: "Rhythm Shapes : PFE du cursus JIN de l’ENSIIE",
-            description: "Jeux HTML5 pour la plateforme de jeux en ligne Kayfo Play de Kayfo Game Studio",
+            title: "Rhythm Shapes : Projet de Fin d'Études",
+            description: "Jeu de rythme qui génère des niveaux par analyse des musiques du joueur",
             personal: true,
             techList: [
                 "Unity",
@@ -76,7 +74,7 @@ function Projects(){
         },
         {
             title: "Build & Destroy : Hostile Cooperation",
-            description: "Jeu pour Global Game Jam 2022. Thème : La Dualité",
+            description: "Jeu pour Global Game Jam 2022 sur le Thème de ''La Dualité''",
             personal: true,
             techList: [
                 "Unity",
@@ -144,7 +142,7 @@ function Projects(){
                                         <span 
                                             className={`${ project.personal ? "bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(35,71,229,0.2)]" : "bg-green-500/10 text-green-500 hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(25,239,25,0.1)]"} py-1 px-3 rounded-full text-sm 
                                               transition-all`}>
-                                            { project.personal ? "Cadre Personel" : "Cadre Professionel"}
+                                            { project.personal ? "Projet Personel" : "Projet Professionel"}
                                         </span> 
                                         {project.techList.map((tech,index) => 
                                             <span 
@@ -156,7 +154,7 @@ function Projects(){
                                         )}
                                     </div>
 
-                                    <div className="flex justify-between items-center">
+                                    <div className="flex justify-around items-center">
                                         <a href={project.href} className="text-orange-400 hover:text-orange-300 transition-colors my-4"> Voir le Projet → </a>
                                     </div>
                                     
