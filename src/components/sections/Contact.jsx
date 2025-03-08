@@ -2,7 +2,7 @@ function Contact(){
     return(
         <section
             id="contact"
-            className="min-h-screen flex items-center justify-center py-20 z-1"
+            className="min-h-screen flex items-center justify-center py-10 z-1"
         >
             <div className="max-w-3xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border rounded-2xl border-white/10 hover:-translate-y-1 transition-all">

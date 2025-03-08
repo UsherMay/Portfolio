@@ -13,7 +13,7 @@ function getNavBarInfoArray(){
             href:"#projects",
         },
         {
-            title:"Contact",
+            title:"Contacts",
             href:"#contact",
         }
     ];

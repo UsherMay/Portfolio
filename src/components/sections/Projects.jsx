@@ -101,7 +101,7 @@ function Projects(){
             id="projects"             
             className="min-h-screen flex items-center justify-center py-20"     
         >
-            <RevealOnScroll>
+            
                 <div className="max-w-5xl mx-auto px-4">
                     <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
                         Mes Projets
@@ -131,7 +131,7 @@ function Projects(){
                             
                         </div> */}
                         {projectsList.map((project,index)=>
-                            
+                            <RevealOnScroll>
                                 <div key={index} className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(239,185,48,0.2)] transition">
                                     <h3 className="text-2xl md:text-xl font-bold mb-2"> {project.title} </h3>
                                     <p className="text-sm md:text-base text-gray-400 mb-4 "> 
@@ -159,6 +159,7 @@ function Projects(){
                                     </div>
                                     
                                 </div>
+                            </RevealOnScroll>
                             
                         )}
                         
@@ -166,7 +167,7 @@ function Projects(){
                     </div>
 
                 </div>
-            </RevealOnScroll>
+            
         </section>
     );
 }

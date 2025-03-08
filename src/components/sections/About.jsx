@@ -111,8 +111,9 @@ function About(){
             id="about"
             className="min-h-screen flex items-center justify-center py-20"     
         >
-            <RevealOnScroll>
+            
                 <div className="max-w-3xl mx-auto px-4">
+                    <RevealOnScroll>
                     <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
                         À Propos de Moi
                     </h2>
@@ -196,8 +197,10 @@ function About(){
 
                         
                     </div>
-
+                    </RevealOnScroll>
+                                    
                     <div className="grid grid-cols-1 md:grid-cols2 gap-6 mt-8">
+                        <RevealOnScroll>
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl text-center font-bold mb-4"> 🏫 Éducation</h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-z">
@@ -225,6 +228,8 @@ function About(){
                                 )} */}
                             </ul>
                         </div>
+                        </RevealOnScroll>
+                        <RevealOnScroll>
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl text-center font-bold mb-4"> 💼 Éxperience</h3>
                             <div className="scape-y-4 text-gray-300">
@@ -279,9 +284,10 @@ function About(){
                                 )} */}
                             </div>
                         </div>
+                        </RevealOnScroll>
                     </div>
                 </div>
-            </RevealOnScroll>
+            
         </section>
     );
 }
