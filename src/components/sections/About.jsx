@@ -97,6 +97,7 @@ function About(){
             duration: "Juin - Sept 2022",
             description: "Étude et conception d’un démonstrateur en réalité augmentée pour du contrôle qualité",
             techList:[
+                "Augmented Reality",
                 "Three.JS", 
                 "WebXR", 
                 "Node.JS", 

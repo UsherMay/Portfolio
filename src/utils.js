@@ -13,6 +13,10 @@ function getNavBarInfoArray(){
             href:"#projects",
         },
         {
+            title:"CV",
+            href:"#resume",
+        },
+        {
             title:"Contacts",
             href:"#contact",
         }
