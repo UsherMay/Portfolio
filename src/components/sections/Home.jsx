@@ -46,7 +46,7 @@ function Home(){
                         Mes Projets
                     </a>
                     <a 
-                        // href="#projects" 
+                        href="#resume" 
                         className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded 
                             font-medium transition-all duration-200
                             hover:-translate-y-0.5 

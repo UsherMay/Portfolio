@@ -131,8 +131,8 @@ function Projects(){
                             
                         </div> */}
                         {projectsList.map((project,index)=>
-                            <RevealOnScroll>
-                                <div key={index} className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(239,185,48,0.2)] transition">
+                            <RevealOnScroll key={index}>
+                                <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(239,185,48,0.2)] transition">
                                     <h3 className="text-2xl md:text-xl font-bold mb-2"> {project.title} </h3>
                                     <p className="text-sm md:text-base text-gray-400 mb-4 "> 
                                         {project.description}
