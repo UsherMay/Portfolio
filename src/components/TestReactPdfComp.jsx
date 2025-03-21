@@ -1,4 +1,5 @@
 // Code from : https://github.com/wojtekmaj/react-pdf/blob/main/sample/vite/Sample.tsx
+// https://projects.wojtekmaj.pl/react-pdf/ https://github.com/wojtekmaj/react-pdf/blob/main/test/Test.tsx 
 
 import { useCallback, useState } from 'react';
 import { useResizeObserver } from '@wojtekmaj/react-hooks';

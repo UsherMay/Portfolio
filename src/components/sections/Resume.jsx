@@ -55,7 +55,7 @@ function Resume(){
             {/* { console.log(containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth, containerWidth) } */}
             {/* className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all" */}
              
-                <div className="w-6/12 max-w-[calc(100%_-_2rem)] m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
+                <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                 {/* <div className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform' ref={setContainerRef}> */}
                         <Document
                             file={'/src/assets/CV_Yvon_COCKS.pdf'}
@@ -91,7 +91,7 @@ function Resume(){
                     
                 </div>
                 
-                <div className="w-6/12 max-w-[calc(100%_-_2rem)] m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
+                <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         <Document
                             file={'/src/assets/CV_Yvon_COCKS_simple.pdf'}
                             onLoadError={console.error}
