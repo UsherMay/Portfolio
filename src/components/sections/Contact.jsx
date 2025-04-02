@@ -20,11 +20,11 @@ function Contact(){
                         <ul className="flex flex-col items-center gap-5">
                             <li className="flex items-center gap-5">
                                 <img src={"https://ushermay.github.io/Portfolio/emailIcon.png"} alt="Email Icon"/>
-                                <a className="text-sm text-orange-500" href="mailto:yvoncocks@gmail.com">yvoncocks@gmail.com</a>
+                                <a className="text-sm text-orange-500 hover:text-orange-300 transition-colors" href="mailto:yvoncocks@gmail.com">yvoncocks@gmail.com</a>
                             </li>
                             <li className="flex items-center gap-5">
                                 <img src={"https://ushermay.github.io/Portfolio/linkedinIcon.png"} alt="Linkedin Icon"/>
-                                <a className="text-sm text-orange-500" href="https://www.linkedin.com/in/yvon-vincent-cocks-4751061ba/">Profil Linkedin</a>
+                                <a className="text-sm text-orange-500 hover:text-orange-300 transition-colors" href="https://www.linkedin.com/in/yvon-vincent-cocks-4751061ba/">Profil Linkedin</a>
                             </li>
                         </ul>
                     </div>
