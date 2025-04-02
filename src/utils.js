@@ -1,4 +1,4 @@
-function getNavBarInfoArray(){
+export function getNavBarInfoArray(){
     const navBarInfo = [
         {
             title:"Accueil",
@@ -25,4 +25,10 @@ function getNavBarInfoArray(){
     return navBarInfo;
 }
 
-export default getNavBarInfoArray;
+export function getImageURL(name){
+    return new URL(`../assets/${name}`,import.meta.url).href;
+}
+
+export function getPdfURL(name){
+    return new URL(`../assets/${name}`,import.meta.url).href;
+}

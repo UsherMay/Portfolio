@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import getNavBarInfoArray from "../utils";
+import { getNavBarInfoArray } from "../utils";
 
 function MobileMenu({isMenuOpen, setIsMenuOpen}){
 
@@ -32,30 +32,6 @@ function MobileMenu({isMenuOpen, setIsMenuOpen}){
                         <span className="text-gray-300 hover:text-white transition-colors">{title}</span>
                 </a>
             )}
-            {/* <a 
-                href="#home" 
-                onClick={()=>setIsMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-                    ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-                >
-                    Home
-            </a>
-            <a 
-                href="#about" 
-                onClick={()=>setIsMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-                    ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-                >
-                    About
-            </a>
-            <a 
-                href="#projects" 
-                onClick={()=>setIsMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-                    ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-                >
-                    Projects
-            </a> */}
 
         </div>
     );

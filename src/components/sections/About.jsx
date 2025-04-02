@@ -175,13 +175,6 @@ function About(){
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-center text-xl font-bold mb-4">{gameDevSkills.title}</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {/* if you see any diffenrec tell me XD -> the problem was the curly brackets after =>
-                                        {gameDevSkills.map((tech, key)=>{
-                                        <span key={key}
-                                            className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sa 
-                                                hover:bg-orange-500/20 hover:shadow-[0_2px_8px_rgba(239, 185, 48, 0.2)]
-                                                transition">{tech}</span>
-                                    })} */}
                                     {gameDevSkills.listOfSkills.map((tech,index) => 
                                     <span 
                                         key={index} 

@@ -1,3 +1,5 @@
+import { getImageURL } from "../../utils";
+
 function Contact(){
     return(
         <section
@@ -9,21 +11,19 @@ function Contact(){
 
                 <div className="p-4 flex flex-col items-center gap-5">
                     <h2 className="text-center text-4xl tracking-widest font-bold bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
-
                     Contacts
                     </h2>
                     <p className="p-4 text-center text-xl tracking-wide font-bold">N'hésitez pas à me contacter</p>
                 </div>    
                 
-                    
                     <div className="p-4">
                         <ul className="flex flex-col items-center gap-5">
                             <li className="flex items-center gap-5">
-                                <img src="/emailIcon.png" alt="Email Icon"/>
+                                <img src={"https://ushermay.github.io/Portfolio/emailIcon.png"} alt="Email Icon"/>
                                 <a className="text-sm text-orange-500" href="mailto:yvoncocks@gmail.com">yvoncocks@gmail.com</a>
                             </li>
                             <li className="flex items-center gap-5">
-                                <img src="/linkedinIcon.png" alt="Linkedin Icon"/>
+                                <img src={"https://ushermay.github.io/Portfolio/linkedinIcon.png"} alt="Linkedin Icon"/>
                                 <a className="text-sm text-orange-500" href="https://www.linkedin.com/in/yvon-vincent-cocks-4751061ba/">Profil Linkedin</a>
                             </li>
                         </ul>
