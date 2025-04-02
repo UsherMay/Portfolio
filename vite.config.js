@@ -41,5 +41,14 @@ export default defineConfig({
 // https://dev.to/shrinivasv73/how-to-deploy-reactjs-apps-built-using-vite-on-github-pages-38bi
 // https://youtu.be/hn1IkJk24ow?si=OQ1_ldSpTHGo1vY5
 
+// Error: spawn git ENOENT
+// https://stackoverflow.com/questions/42545885/vs-code-error-spawn-git-enoent
+// so i tried this first => (i tried to use github desktop because i didn't feel like "reinstalling" git)
+// https://stackoverflow.com/questions/34565238/where-does-github-desktop-install-command-line-version-of-git
+// didn't work (maybe i didn't give the right path)
+// https://github.com/desktop/desktop/issues/3801
+// so i installed git for windows then added git to PATH
+
+
 
 
