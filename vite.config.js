@@ -31,10 +31,15 @@ export default defineConfig({
            ],
          })
   ],
+  base: '/Portfolio/',
 })
 
 // in terminal => npm install tailwindcss @tailwindcss/vite
 // https://github.com/wojtekmaj/react-pdf?tab=readme-ov-file#support-for-non-latin-characters
+
+// deploy portfolio
+// https://dev.to/shrinivasv73/how-to-deploy-reactjs-apps-built-using-vite-on-github-pages-38bi
+// https://youtu.be/hn1IkJk24ow?si=OQ1_ldSpTHGo1vY5
 
 
 
