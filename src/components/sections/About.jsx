@@ -205,12 +205,6 @@ function About(){
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl text-center font-bold mb-4"> 🏫 Éducation</h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-z">
-                                {/* <li>
-                                    <strong>Diplome d'Ingénieur Informatique</strong> - ENSIIE (2020-2024)
-                                </li>
-                                <li>
-                                    Cours principaux: Developpement JV, RA, RV, Web, Gestion de données
-                                </li> */}
                                 {educationSection.map((education,index) =>
                                 <div key={index}>
                                     <li key={education.school}>
@@ -234,25 +228,6 @@ function About(){
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl text-center font-bold mb-4"> 💼 Éxperience</h3>
                             <div className="scape-y-4 text-gray-300">
-                                {/* <div>
-                                    <h4 className="font-semibold">
-                                        Développeur Jeux Mobiles et HTML5 at Kayfo Game Studio (Aoû 2023 - Jan 2024)
-                                        
-                                    </h4>
-                                    <p>
-                                        blablabla.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-semibold">
-                                        you know you know
-                                        
-                                    </h4>
-                                    <p>
-                                        blablabla.
-                                    </p>
-                                </div> */}
                                 {workSection.map((work,index) =>
                                 <div key={index}>
                                     <div key={index}>
@@ -280,9 +255,6 @@ function About(){
                                                             
                                     <br/>
                                 </div>)}
-                                {/* {workSection.map(({title, school, location, duration, description},index) =>
-                                    <WorkSubSection idx={index} title={title} school={school} location={location} duration={duration} description={description}/>
-                                )} */}
                             </div>
                         </div>
                         </RevealOnScroll>

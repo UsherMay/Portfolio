@@ -8,7 +8,6 @@ import About from './components/sections/About'
 import Projects from './components/sections/Projects'
 import Contact from './components/sections/Contact'
 import Resume from './components/sections/Resume'
-import TestReactPdfComp from './components/TestReactPdfComp'
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,7 +24,6 @@ function App() {
         <About/>
         <Projects/>
         <Resume/>
-        {/* <TestReactPdfComp/> */}
         <Contact/>
       </div>
     </>

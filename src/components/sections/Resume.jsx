@@ -51,38 +51,14 @@ function Resume(){
             <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right">
                 Curriculum Vitæ
             </h2> 
-            
-            {/* { console.log(containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth, containerWidth) } */}
-            {/* className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all" */}
              
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
-                {/* <div className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform' ref={setContainerRef}> */}
                         <Document
                             file={'/src/assets/CV_Yvon_COCKS.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
                             >
-                                {/* <div className="max-w-full flex mt-4 self-center">
-                                    <button disabled={(pageNumber || 0) <= 1} onClick={previousPage} type="button">
-                                    Previous
-                                    </button>
-                                    <span>{`Page ${pageNumber || (numPages ? 1 : '--')} of ${numPages || '--'}`}</span>
-                                    <button
-                                    disabled={(pageNumber || 0) >= (numPages || 0)}
-                                    onClick={nextPage}
-                                    type="button"
-                                    >
-                                    Next
-                                    </button>
-                                </div> */}
-                                {/* {Array.from(new Array(numPages), (_el, index) => (
-                                              <Page
-                                                key={`page_${index + 1}`}
-                                                pageNumber={index + 1}
-                                                width={containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth}
-                                              />
-                                            ))} */}
                                 <Page 
                                     pageIndex={0}
                                     width={containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth}

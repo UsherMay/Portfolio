@@ -6,7 +6,7 @@ function Hero(){
         >
             <div className="text-left z-10 px-4 ">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent leading-right"> Hi, I'm Me</h1>
-                <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto"> BLABLABAL wow wowowohiu, skjdbkqdjoaibfljhbdlbdlkbmabjm
+                <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto"> wow wowowohiu, skjdbkqdjoaibfljhbdlbdlkbmabjm
                     osdubnsldjnmdskjnmdskjbmskjvùmzon doubn smdjobmajb zaodnnqdbjmov obnmsdljv
                 </p>
 

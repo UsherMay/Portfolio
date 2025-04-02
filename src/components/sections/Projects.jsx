@@ -29,16 +29,6 @@ function Projects(){
             ],
             href :"https://play.google.com/store/apps/details?id=games.Kayfo.DetectiveSyra&hl=fr"
         },
-        // { // Can't find link to the game
-        //     title: "Teul Master",
-        //     description: "Jeux de jongle en HTML5 pour la plateforme de jeux en ligne Kayfo Play",
-        //     personal: false,
-        //     techList: [
-        //         "PlayCanvas",
-        //         "JavaScript"
-        //     ],
-        //     href :"https://www.kayfo.games"
-        // },
         {
             title: "Fruit Spin",
             description: "Jeux d'arcade en HTML5 pour la plateforme de jeux en ligne Kayfo Play",
@@ -109,27 +99,6 @@ function Projects(){
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         
-                        
-                        {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(239,185,48,0.2)] transition">
-                            <h3 className="text-2xl md:text-xl font-bold mb-2"> Title </h3>
-                            <p className="text-sm md:text-base text-gray-400 mb-4 "> 
-                                BLABLABLABALALALjydvbksbvskbksjbvkdsj
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                            {["qqch","qqch2"].map((tech,index) => 
-                                    <span 
-                                        key={index} 
-                                        className="bg-orange-500/10 text-orange-500 py-1 px-3 rounded-full text-sm 
-                                        hover:bg-orange-500/20 hover:shadow-[0_2px_8px_rgba(239,185,48,0.1)] transition-all">
-                                        {tech}
-                                    </span>)}
-                            </div>
-
-                            <div className="flex justify-between items-center">
-                                <a href="" className="text-orange-400 hover:text-orange-300 transition-colors my-4"> View Project → </a>
-                            </div>
-                            
-                        </div> */}
                         {projectsList.map((project,index)=>
                             <RevealOnScroll key={index}>
                                 <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(239,185,48,0.2)] transition">
@@ -160,9 +129,7 @@ function Projects(){
                                     
                                 </div>
                             </RevealOnScroll>
-                            
                         )}
-                        
                         
                     </div>
 
