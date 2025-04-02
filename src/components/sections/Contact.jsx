@@ -19,11 +19,11 @@ function Contact(){
                     <div className="p-4">
                         <ul className="flex flex-col items-center gap-5">
                             <li className="flex items-center gap-5">
-                                <img src="/src/assets/emailIcon.png" alt="Email Icon"/>
+                                <img src="/emailIcon.png" alt="Email Icon"/>
                                 <a className="text-sm text-orange-500" href="mailto:yvoncocks@gmail.com">yvoncocks@gmail.com</a>
                             </li>
                             <li className="flex items-center gap-5">
-                                <img src="/src/assets/linkedinIcon.png" alt="Linkedin Icon"/>
+                                <img src="/linkedinIcon.png" alt="Linkedin Icon"/>
                                 <a className="text-sm text-orange-500" href="https://www.linkedin.com/in/yvon-vincent-cocks-4751061ba/">Profil Linkedin</a>
                             </li>
                         </ul>

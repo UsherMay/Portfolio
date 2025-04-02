@@ -9,6 +9,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     import.meta.url,
 ).toString();
 
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 const options = {
     cMapUrl: '/cmaps/',
     standardFontDataUrl: '/standard_fonts/',
@@ -29,7 +31,6 @@ function Resume(){
     const onResize = useCallback((entries) => {
         const [entry] = entries;
     
-        // console.log("onResize => entry.contentRect.width : ",entry.contentRect.width);
         if (entry) {
 
             setContainerWidth(entry.contentRect.width);
@@ -54,7 +55,7 @@ function Resume(){
              
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         <Document
-                            file={'/src/assets/CV_Yvon_COCKS.pdf'}
+                            file={'/CV_Yvon_COCKS.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
@@ -69,7 +70,7 @@ function Resume(){
                 
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         <Document
-                            file={'/src/assets/CV_Yvon_COCKS_simple.pdf'}
+                            file={'/CV_Yvon_COCKS_simple.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
