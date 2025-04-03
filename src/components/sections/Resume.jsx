@@ -54,6 +54,8 @@ function Resume(){
             </h2> 
              
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
+
+                        <p className='text-center text-gray-400 pb-6'>CV "Classique"</p>
                         <Document
                             file={'/Portfolio/CV_Yvon_COCKS.pdf'}
                             onLoadError={console.error}
@@ -69,6 +71,8 @@ function Resume(){
                 </div>
                 
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
+                        
+                        <p className='text-center text-gray-400 pb-6'>CV "Finance"</p>
                         <Document
                             file={'/Portfolio/CV_Yvon_Cocks_Simple.pdf'}
                             onLoadError={console.error}
@@ -81,6 +85,29 @@ function Resume(){
                                 />
                         </Document>
                     
+                </div>
+
+                <div className="flex justify-center space-x-4 p-7">
+                    <a 
+                        href="/Portfolio/CV_Yvon_COCKS.pdf" download="CV_Yvon_COCKS"
+                        className="bg-orange-500 text-white py-3 px-6 rounded 
+                            font-medium transition relative overflow-hidden 
+                            hover:-translate-y-0.5 
+                            hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.4)]
+                            hover:bg-orange-300"
+                    >
+                        Télécharger CV "Classique"
+                    </a>
+                    <a 
+                        href="/Portfolio/CV_Yvon_Cocks_Simple.pdf" download="CV_Yvon_Cocks_Simple"
+                        className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded 
+                            font-medium transition-all duration-200
+                            hover:-translate-y-0.5 
+                            hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.2)]
+                            hover:bg-orange-500/10"
+                    >
+                        Télécharger CV "Finance"
+                    </a>
                 </div>
                 
             
