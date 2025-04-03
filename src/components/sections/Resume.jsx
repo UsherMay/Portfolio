@@ -55,7 +55,7 @@ function Resume(){
              
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         <Document
-                            file={'https://ushermay.github.io/Portfolio/CV_Yvon_COCKS.pdf'}
+                            file={'/Portfolio/CV_Yvon_COCKS.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
@@ -70,7 +70,7 @@ function Resume(){
                 
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         <Document
-                            file={'https://ushermay.github.io/Portfolio/CV_Yvon_Cocks_Simple.pdf'}
+                            file={'/Portfolio/CV_Yvon_Cocks_Simple.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}

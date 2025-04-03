@@ -31,7 +31,7 @@ export default defineConfig({
            ],
          })
   ],
-  base: '/Portfolio/',
+  base: '/Portfolio',
 })
 
 // in terminal => npm install tailwindcss @tailwindcss/vite
@@ -49,6 +49,8 @@ export default defineConfig({
 // https://github.com/desktop/desktop/issues/3801
 // so i installed git for windows then added git to PATH
 
+// https://forum.freecodecamp.org/t/images-not-loading-in-vite-react-app-on-github/679499
+// base: '/Portfolio/' => base: '/Portfolio'
 
 
 
