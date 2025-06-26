@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://UsherMay.github.io/Portfolio", 
+  "homepage": "https://UsherMay.github.io/Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.11",
     "@wojtekmaj/react-hooks": "^1.22.0",
+    "lucide-react": "^0.523.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-pdf": "^9.2.1",
