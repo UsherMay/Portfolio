@@ -13,7 +13,8 @@ function About(){
             "CSS",
             "JavaScript",
             "React",
-            "Blazor",
+            "Razor",
+            // "Blazor",
             // "TailWindCSS",
         ]
     };
