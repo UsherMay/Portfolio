@@ -55,9 +55,9 @@ function Resume(){
              
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
 
-                        <p className='text-center text-gray-400 pb-6'>CV "Classique"</p>
+                        <p className='text-center text-gray-400 pb-6'>CV "Développeur Web"</p>
                         <Document
-                            file={'/Portfolio/CV_Yvon_COCKS.pdf'}
+                            file={'/Portfolio/CV_Yvon_COCKS_Web.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
@@ -72,9 +72,9 @@ function Resume(){
                 
                 <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         
-                        <p className='text-center text-gray-400 pb-6'>CV "Finance"</p>
+                        <p className='text-center text-gray-400 pb-6'>CV "Développeur Jeux Vidéo"</p>
                         <Document
-                            file={'/Portfolio/CV_Yvon_Cocks_Simple.pdf'}
+                            file={'/Portfolio/CV_Yvon_COCKS_JV.pdf'}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
@@ -89,24 +89,24 @@ function Resume(){
 
                 <div className="flex justify-center space-x-4 p-7">
                     <a 
-                        href="/Portfolio/CV_Yvon_COCKS.pdf" download="CV_Yvon_COCKS"
+                        href="/Portfolio/CV_Yvon_COCKS_Web.pdf" download="CV_Yvon_COCKS_Web"
                         className="bg-orange-500 text-white py-3 px-6 rounded 
                             font-medium transition relative overflow-hidden 
                             hover:-translate-y-0.5 
                             hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.4)]
                             hover:bg-orange-300"
                     >
-                        Télécharger CV "Classique"
+                        Télécharger CV "Développeur Web"
                     </a>
                     <a 
-                        href="/Portfolio/CV_Yvon_Cocks_Simple.pdf" download="CV_Yvon_Cocks_Simple"
+                        href="/Portfolio/CV_Yvon_COCKS_JV.pdf" download="CV_Yvon_COCKS_JV"
                         className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded 
                             font-medium transition-all duration-200
                             hover:-translate-y-0.5 
                             hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.2)]
                             hover:bg-orange-500/10"
                     >
-                        Télécharger CV "Finance"
+                        Télécharger CV "Jeux Vidéo"
                     </a>
                 </div>
                 
