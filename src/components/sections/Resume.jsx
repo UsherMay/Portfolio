@@ -53,7 +53,7 @@ function Resume(){
                 Curriculum Vitæ
             </h2> 
              
-                <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
+                <div className="w-4/10 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
 
                         <p className='text-center text-gray-400 pb-6'>CV "Développeur Web"</p>
                         <Document
@@ -70,7 +70,7 @@ function Resume(){
                     
                 </div>
                 
-                <div className="w-6/12 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
+                <div className="w-4/10 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         
                         <p className='text-center text-gray-400 pb-6'>CV "Développeur Jeux Vidéo"</p>
                         <Document
