@@ -1,29 +1,8 @@
-export function getNavBarInfoArray(){
-    const navBarInfo = [
-        {
-            title:"Accueil",
-            href:"#home",
-        },
-        {
-            title:"À propos de moi",
-            href:"#about",
-        },
-        {
-            title:"Projets",
-            href:"#projects",
-        },
-        {
-            title:"CV",
-            href:"#resume",
-        },
-        {
-            title:"Contacts",
-            href:"#contact",
-        }
-    ];
-
-    return navBarInfo;
-}
+// import {navBarInfo} from "./constants/index.js";
+//
+// export function getNavBarInfoArray(){
+//     return navBarInfo;
+// }
 
 export function getImageURL(name){
     return new URL(`../assets/${name}`,import.meta.url).href;

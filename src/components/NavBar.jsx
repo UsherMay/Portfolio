@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { getNavBarInfoArray } from "../utils";
+import {navBarInfo} from "../constants/index.js";
 
 function NavBar({isMenuOpen, setIsMenuOpen}){
 
-    const navBarInfo = getNavBarInfoArray();
+    // const navBarInfo = getNavBarInfoArray();
     
     useEffect(()=>{
         document.body.style.overflow = isMenuOpen ? "hidden" : "";

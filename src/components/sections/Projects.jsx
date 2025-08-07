@@ -1,12 +1,6 @@
 import RevealOnScroll from "../RevealOnScroll";
 
 function Projects(){
-    const frontendSkills = [
-        "React",
-        "TypeScript",
-        "TailWindCSS"
-    ];
-
     const projectsList = [
         {
             title: "Portfolio",

@@ -2,111 +2,16 @@ import { v4 as uuidv } from 'uuid'
 import RevealOnScroll from '../RevealOnScroll';
 import EducationSubSection from '../EducationSubSection';
 import WorkSubSection from '../WorkSubSection';
+import {
+    frontendSkills,
+    backendSkills,
+    databaseSkills,
+    gameDevSkills,
+    educationSection,
+    workSection
+} from "../../constants/index.js";
 
 function About(){
-
-    const frontendSkills = {
-        title: "Frontend",
-        listOfSkills:
-        [
-            "Html",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Razor",
-            // "Blazor",
-            // "TailWindCSS",
-        ]
-    };
-
-    const backendSkills = {
-        title: "Backend",
-        listOfSkills:
-        [
-            // "PHP",
-            "Node.JS",
-            ".Net",
-            "Three.JS"
-        ]
-    };
-
-    const gameDevSkills = {
-        title: "Développement de jeu",
-        listOfSkills:
-        [
-            "Unity",
-            "Cocos",
-            "PlayCanvas",
-            "Augmented Reality",
-            "Virtual Reality"
-    ]};
-
-    const databaseSkills = {
-        title: "Base de données",
-        listOfSkills:
-        [
-            "SQL",
-            "PostgreSQL",
-    ]};
-
-    const educationSection = [
-        {
-            title: "Diplome d'Ingénieur Informatique",
-            school: "ENSIIE",
-            location: "Evry",
-            duration: "2020-2024",
-            description: "Ingénieur Informatique généraliste spécialisé en Jeux vidéo et Interaction Numérique"
-        },
-        {
-            title: "Classes Préparatoires aux Grandes Écoles",
-            school: "Lycée Jeanne d'Albret",
-            location: "Saint-Germain-en-Laye",
-            duration: "2018-2020",
-            description: "PCSI (Physique, Chimie et Sciences de l'Ingénieur) puis PC"
-        },
-    ];
-
-    const workSection = [
-        {
-            title: "Développeur Jeux Mobiles et HTML5",
-            company: "Kayfo Games Studio",
-            location: "Sénégal",
-            duration: "Aoû 2023 - Jan 2024",
-            description: "Développement de jeux vidéo mobiles et HTML5",
-            techList:[
-                "Unity",
-                "Cocos",
-                "PlayCanvas",
-            ]
-        },
-        {
-            title: "Développeur Backend .Net",
-            company: "SenGames / SoloEsport",
-            location: "Sénégal",
-            duration: "Aoû 2023 - Jan 2024",
-            description: "Développement d’une plateforme web dédiée à l’écosystème des compétitions d’esport",
-            techList:[
-                "ASP .NET Core 6.0",
-                "MVC",
-                "Entity Framework",
-            ]
-        },
-        {
-            title: "Développeur Réalité Augmentée (R&D)",
-            company: "Centre d'Innovation d'Évry",
-            location: "Évry",
-            duration: "Juin - Sept 2022",
-            description: "Étude et conception d’un démonstrateur en réalité augmentée pour du contrôle qualité",
-            techList:[
-                "Augmented Reality",
-                "Three.JS", 
-                "WebXR", 
-                "Node.JS", 
-                "Javascript"
-            ]
-        },
-    ];
-
 
     return(
         <section

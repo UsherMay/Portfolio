@@ -1,9 +1,8 @@
-import { useEffect } from "react";
-import { getNavBarInfoArray } from "../utils";
+import {navBarInfo} from "../constants/index.js";
 
 function MobileMenu({isMenuOpen, setIsMenuOpen}){
 
-    const navBarInfo = getNavBarInfoArray();
+    // const navBarInfo = getNavBarInfoArray();
 
     return(
         <div className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center

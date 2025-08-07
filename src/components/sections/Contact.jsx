@@ -1,4 +1,4 @@
-import { getImageURL } from "../../utils";
+
 
 function Contact(){
     return(

@@ -3,6 +3,7 @@ import { Document, Page, pdfjs} from 'react-pdf'
 import { useResizeObserver } from '@wojtekmaj/react-hooks';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
+import {resumeJV, resumeWEB} from "../../constants/index.js";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -55,9 +56,9 @@ function Resume(){
              
                 <div className="w-4/10 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
 
-                        <p className='text-center text-gray-400 pb-6'>CV "Développeur Web"</p>
+                        <p className='text-center text-gray-400 pb-6'>{resumeWEB.title}</p>
                         <Document
-                            file={'/Portfolio/CV_Yvon_COCKS_Web.pdf'}
+                            file={resumeWEB.href}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
@@ -72,9 +73,9 @@ function Resume(){
                 
                 <div className="w-4/10 max-w-[calc(100%_-_2rem)] min-w-96 m-0.5 p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform" ref={setContainerRef}> 
                         
-                        <p className='text-center text-gray-400 pb-6'>CV "Développeur Jeux Vidéo"</p>
+                        <p className='text-center text-gray-400 pb-6'>{resumeJV.title}</p>
                         <Document
-                            file={'/Portfolio/CV_Yvon_COCKS_JV.pdf'}
+                            file={resumeJV.href}
                             onLoadError={console.error}
                             onLoadSuccess={onDocumentLoadSuccess}
                             options={options}
@@ -89,24 +90,24 @@ function Resume(){
 
                 <div className="flex justify-center space-x-4 p-7">
                     <a 
-                        href="/Portfolio/CV_Yvon_COCKS_Web.pdf" download="CV_Yvon_COCKS_Web"
+                        href={resumeWEB.href} download={resumeWEB.download}
                         className="bg-orange-500 text-white py-3 px-6 rounded 
                             font-medium transition relative overflow-hidden 
                             hover:-translate-y-0.5 
                             hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.4)]
                             hover:bg-orange-300"
                     >
-                        Télécharger CV "Développeur Web"
+                        Télécharger {resumeWEB.title}
                     </a>
                     <a 
-                        href="/Portfolio/CV_Yvon_COCKS_JV.pdf" download="CV_Yvon_COCKS_JV"
+                        href={resumeJV.href} download={resumeJV.download}
                         className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded 
                             font-medium transition-all duration-200
                             hover:-translate-y-0.5 
                             hover:shadow-[0_0_15px_rgba(239, 185, 48, 0.2)]
                             hover:bg-orange-500/10"
                     >
-                        Télécharger CV "Jeux Vidéo"
+                        Télécharger {resumeJV.title}
                     </a>
                 </div>
                 
