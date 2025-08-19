@@ -45,7 +45,7 @@ export const frontendSkills = {
             "Razor",
             // "Boostrap",
             // "Blazor",
-            // "TailWindCSS",
+            "TailWindCSS",
         ]
 };
 
@@ -56,7 +56,8 @@ export const backendSkills = {
             // "PHP",
             "Node.JS",
             ".Net",
-            "Three.JS"
+            "Three.JS",
+            "Express",
         ]
 };
 
@@ -136,4 +137,103 @@ export const workSection = [
         ]
     },
 ];
+
+export  const projectsList = [
+    {
+        title: "MERN-ThinkBoard",
+        description: "Une Application Fullstack construite avec la stack MERN (MongoDB, Express, React, Node)",
+        personal: true,
+        techList: [
+            "React",
+            "TailwindCSS",
+            "Node.JS",
+            "MongoDB",
+            "Express",
+            "Redis",
+            "REST API CRUD",
+            "Render.com"
+        ],
+        href :"https://mern-thinkboard-d3ci.onrender.com/"
+    },
+    {
+        title: "Portfolio",
+        description: "Un Portfolio simpliste pour montrer mes compétences",
+        personal: true,
+        techList: [
+            "React",
+            "TailwindCSS",
+            "Node.JS",
+        ],
+        href :""
+    },
+    {
+        title: "Détective Syra : Objets cachés",
+        description: "Développeur de mini jeux avec Kayfo Game Studio",
+        personal: false,
+        techList: [
+            "Unity",
+            "C#"
+        ],
+        href :"https://play.google.com/store/apps/details?id=games.Kayfo.DetectiveSyra&hl=fr"
+    },
+    {
+        title: "Fruit Spin",
+        description: "Jeux d'arcade en HTML5 pour la plateforme de jeux en ligne Kayfo Play",
+        personal: false,
+        techList: [
+            "Cocos",
+            "TypeScript"
+        ],
+        href :"https://www.kayfo.games/game/fruit-spin"
+    },
+    {
+        title: "Rhythm Shapes : Projet de Fin d'Études",
+        description: "Jeu de rythme qui génère des niveaux par analyse des musiques du joueur",
+        personal: true,
+        techList: [
+            "Unity",
+            "C#",
+            "PC-Windows"
+        ],
+        href :"https://ushermay.itch.io/rhythm-shapes"
+    },
+    {
+        title: "Neon Dash",
+        description: "Un jeu de course en ligne droite où vous devez esquiver les obstacles ou changer de couleur pour les franchir",
+        personal: true,
+        techList: [
+            "Unity",
+            "C#",
+            "WebGl",
+            "PC-Windows"
+        ],
+        href :"https://thearias09.itch.io/neon-dash"
+    },
+    {
+        title: "Build & Destroy : Hostile Cooperation",
+        description: "Jeu pour Global Game Jam 2022 sur le Thème de ''La Dualité''",
+        personal: true,
+        techList: [
+            "Unity",
+            "C#",
+            "PC-Windows"
+        ],
+        href :"https://thearias09.itch.io/bad"
+    },
+    {
+        title: "Surface",
+        description: "Un jeu d'exploration en 2D. Aidez « Ploup » le calamar à atteindre la surface !",
+        personal: true,
+        techList: [
+            "Unity",
+            "C#",
+            "PC-Windows"
+        ],
+        href :"https://thearias09.itch.io/surface"
+    },
+];
+
+export const aboutMe = "Diplômé en ingénierie informatique de l’ENSIIE, " +
+    "j'ai acquis des en tant que " +
+    "Développeur Unity / C# / C++ / C / RA / RV / .Net / React.";
 
