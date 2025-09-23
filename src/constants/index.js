@@ -140,6 +140,19 @@ export const workSection = [
 
 export  const projectsList = [
     {
+        title: "Video Game API",
+        description: "Une API .Net local et un site Web local qui l'utilise",
+        personal: true,
+        techList: [
+            ".Net 9.0",
+            "EntityFramework",
+            "REST API CRUD",
+            "Paging",
+            "Authentification",
+            "Authorization"
+        ],
+        href :"https://github.com/UsherMay/VideoGameApi"
+    },{
         title: "MERN-ThinkBoard",
         description: "Une Application Fullstack construite avec la stack MERN (MongoDB, Express, React, Node)",
         personal: true,
