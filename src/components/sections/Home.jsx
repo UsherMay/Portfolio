@@ -20,7 +20,7 @@ function Home(){
                         Hi, Je suis Yvon COCKS
                     </h1>
                     
-                    <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+                    <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto break-keep">
                         Je recherche un emploi en tant que
                         développeur Unity / C# / C++ / C / Réalité Augmentée (RA) / Réalité Virtuelle (RV)
                         / .Net / React.
