@@ -99,6 +99,17 @@ export const educationSection = [
 
 export const workSection = [
     {
+        title: "Développeur Unity",
+        company: "Wondder",
+        location: "France (Distanciel)",
+        duration: "Jan 2026 - Jan 2026, 3 sem.",
+        description: "Conversion d’une application 3D VR en application desktop Windows",
+        techList:[
+            "Unity",
+            "Atlassian Confluence",
+        ]
+    },
+    {
         title: "Développeur Jeux Mobiles et HTML5",
         company: "Kayfo Games Studio",
         location: "Sénégal",
